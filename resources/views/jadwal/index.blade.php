@@ -3,11 +3,25 @@
 @section('title', 'Daftar Jadwal Pendakian')
 
 @section('content')
-    <h1>Daftar Jadwal Pendakian</h1>
-    <a href="{{ route('jadwals.create') }}">Tambah Jadwal Pendakian Baru</a>
-    <ul>
-        @foreach($jadwals as $jadwal)
-            <li>{{ $jadwal->jadwalPendakian }} - {{ $jadwal->lokasi }} - {{ $jadwal->harga }} - {{ $jadwal->kuota }}</li>
-        @endforeach
-    </ul>
+<div class="hero-tabel">
+        <h1>Jadwal & Kuota Pendakian</h1>
+    <div class="container-80">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Kuota</th>
+                    <th>Pesan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/01/2001</td>
+                    <td>30</td>
+                    <td><button>Pergi</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+</div>
 @endsection

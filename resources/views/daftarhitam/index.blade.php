@@ -3,11 +3,25 @@
 @section('title', 'Daftar Daftar Hitam')
 
 @section('content')
-    <h1>Daftar Daftar Hitam</h1>
-    <a href="{{ route('daftarHitams.create') }}">Tambah Daftar Hitam Baru</a>
-    <ul>
-        @foreach($daftarHitams as $daftarHitam)
-            <li>{{ $daftarHitam->tanggalBlacklist }} - {{ $daftarHitam->keterangan }}</li>
-        @endforeach
-    </ul>
+<div class="hero-tabel">
+        <h1>Daftar Hitam</h1>
+        <div class="container-80">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Alasan</th>
+                        <th>Tanggal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Merusak Fasilitas</td>
+                        <td>01/01/2001</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+    </div> 
 @endsection
