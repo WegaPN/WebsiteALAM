@@ -69,3 +69,6 @@ Route::get('/kecelakaans/{kecelakaan}', [KecelakaanController::class, 'show'])->
 Route::get('/kecelakaans/{kecelakaan}/edit', [KecelakaanController::class, 'edit'])->name('kecelakaans.edit');
 Route::put('/kecelakaans/{kecelakaan}', [KecelakaanController::class, 'update'])->name('kecelakaans.update');
 Route::delete('/kecelakaans/{kecelakaan}', [KecelakaanController::class, 'destroy'])->name('kecelakaans.destroy');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
