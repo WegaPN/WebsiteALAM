@@ -8,19 +8,20 @@
 
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="{{ route('users.index') }}">Users</a></li>
-            <li><a href="{{ route('jadwals.index') }}">Jadwal Pendakian</a></li>
-            <li><a href="{{ route('orders.index') }}">Orders</a></li>
-            <li><a href="{{ route('pembayarans.index') }}">Pembayaran</a></li>
-            <li><a href="{{ route('daftarHitams.index') }}">Daftar Hitam</a></li>
-            <li><a href="{{ route('kecelakaans.index') }}">Kecelakaan</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <div class="logo">Gunung Putri Lembang</div>
+        <nav>
+            <ul>
+                <li><a href="#info">Info Keselamatan</a></li>
+                <li><a href="{{ route('jadwals.index') }}">Jadwal Pendakian</a></li>
+                <li><a href="#login">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         @yield('content')
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
+<footer class="footer">Footer</footer>
 </html>
