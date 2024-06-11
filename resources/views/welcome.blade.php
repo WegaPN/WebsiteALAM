@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="#info">Info Keselamatan</a></li>
                 <li><a href="#jadwal">Jadwal</a></li>
-                <li><a href="#login">Login/Register</a></li>
+                <li><a href="login">Login/Register</a></li>
             </ul>
         </nav>
     </header>

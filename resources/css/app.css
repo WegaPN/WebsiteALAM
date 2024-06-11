@@ -201,9 +201,10 @@ header nav ul li a:hover {
     margin-bottom: 5px;
 }
 
-.login-container input[type="text"],
-.login-container input[type="password"] {
-    width: 100%;
+.login-container .input-container input[type="text"],
+.login-container .input-container input[type="email"],
+.login-container .input-container input[type="password"] {
+    width: 105%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -243,8 +244,9 @@ header nav ul li a:hover {
 }
 
 .login-container a {
-    color: #333;
+    color: #fff7f7;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer {
