@@ -56,7 +56,7 @@ header nav ul li a:hover {
     text-align: center;
     padding: 100px 20px;
     position: relative;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
