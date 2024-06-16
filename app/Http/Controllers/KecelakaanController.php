@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kecelakaan;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Permission;
 
 class KecelakaanController extends Controller
 {

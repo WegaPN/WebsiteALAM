@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pembayaran;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Permission;
 
 class PembayaranController extends Controller
 {
