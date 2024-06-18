@@ -22,7 +22,7 @@
     <section class="hero">
         <div class="header-hero">
         <h1>Selamat datang di Website Pendakian Gunung Putri Lembang</h1>
-        <button class="cta-button" onclick="window.location.href='orders'">Pesan Tiket</button>
+        <button class="cta-button" onclick="window.location.href='jadwal'">Pesan Tiket</button>
     </div>
     </section>
     <section class="jalur-pendakian">
