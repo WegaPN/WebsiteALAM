@@ -15,7 +15,7 @@
     <form action="{{ route('orders.update', $order->id) }}" method="POST">
         @csrf
         @method('PUT')
-        <div class="mb-3">
+        <div class="input-container">
             <label for="user_id" class="form-label">User</label>
             <select class="form-control" id="user_id" name="user_id">
                 @foreach ($users as $user)
@@ -23,7 +23,7 @@
                 @endforeach
             </select>
         </div>
-        <div class="mb-3">
+        <div class="input-container">
             <label for="jadwal_id" class="form-label">Jadwal</label>
             <select class="form-control" id="jadwal_id" name="jadwal_id">
                 @foreach ($jadwals as $jadwal)
@@ -31,15 +31,15 @@
                 @endforeach
             </select>
         </div>
-        <div class="mb-3">
+        <div class="input-container">
             <label for="jumlah" class="form-label">Jumlah</label>
             <input type="number" class="form-control" id="jumlah" name="jumlah" value="{{ $order->jumlah }}">
         </div>
-        <div class="mb-3">
+        <div class="input-container">
             <label for="namaPendaki" class="form-label">Nama Pendaki</label>
             <input type="text" class="form-control" id="namaPendaki" name="namaPendaki" value="{{ $order->namaPendaki }}">
         </div>
-        <div class="mb-3">
+        <div class="input-container">
             <label for="tanggalOrder" class="form-label">Tanggal Order</label>
             <input type="date" class="form-control" id="tanggalOrder" name="tanggalOrder" value="{{ $order->tanggalOrder }}">
         </div>

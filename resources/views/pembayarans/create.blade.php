@@ -14,15 +14,15 @@
     @endif
     <form action="{{ route('pembayarans.store') }}" method="POST">
         @csrf
-        <div class="mb-3">
+        <div class="input-container">
             <label for="user_id" class="form-label">User ID</label>
             <input type="text" class="form-control" id="user_id" name="user_id" value="{{ old('user_id') }}">
         </div>
-        <div class="mb-3">
+        <div class="input-container">
             <label for="order_id" class="form-label">Order ID</label>
             <input type="text" class="form-control" id="order_id" name="order_id" value="{{ old('order_id') }}">
         </div>
-        <div class="mb-3">
+        <div class="input-container">
             <label for="keterangan" class="form-label">Keterangan</label>
             <textarea class="form-control" id="keterangan" name="keterangan">{{ old('keterangan') }}</textarea>
         </div>
