@@ -5,6 +5,7 @@
     <h1>Daftar Order</h1>
     <div class="container-80">
         <a href="{{ route('orders.create') }}" class="btn btn-primary mb-3">Tambah Order</a>
+        <br>
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 {{ $message }}
@@ -31,7 +32,7 @@
                         <td>{{ $order->jumlah }}</td>
                         <td>{{ $order->namaPendaki }}</td>
                         <td>{{ $order->tanggalOrder }}</td>
-                        <td>
+                        <td class="action-buttons">
                             <a href="{{ route('orders.show', $order->id) }}" class="btn btn-info">Detail</a>
                             <a href="{{ route('orders.edit', $order->id) }}" class="btn btn-warning">Edit</a>
                             <form action="{{ route('orders.destroy', $order->id) }}" method="POST" style="display:inline-block;">

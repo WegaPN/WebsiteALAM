@@ -5,6 +5,7 @@
     <h1>Daftar Hitam</h1>
     <div class="container-80">
         <a href="{{ route('daftarHitams.create') }}" class="btn btn-primary mb-3">Tambah Daftar Hitam</a>
+        <br>
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 {{ $message }}
@@ -27,7 +28,7 @@
                         <td>{{ $daftarHitam->user->name }}</td>
                         <td>{{ $daftarHitam->tanggalBlacklist }}</td>
                         <td>{{ $daftarHitam->keterangan }}</td>
-                        <td>
+                        <td class="action-buttons">
                             <a href="{{ route('daftarHitams.show', $daftarHitam->id) }}" class="btn btn-info">Detail</a>
                             <a href="{{ route('daftarHitams.edit', $daftarHitam->id) }}" class="btn btn-warning">Edit</a>
                             <form action="{{ route('daftarHitams.destroy', $daftarHitam->id) }}" method="POST" style="display:inline-block;">

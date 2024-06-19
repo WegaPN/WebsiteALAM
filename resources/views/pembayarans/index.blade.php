@@ -5,6 +5,7 @@
     <h1>Daftar Pembayaran</h1>
     <div class="container-80">
         <a href="{{ route('pembayarans.create') }}" class="btn btn-primary mb-3">Tambah Pembayaran</a>
+        <br>
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 {{ $message }}
@@ -29,7 +30,7 @@
                         <td>{{ $pembayaran->metodePembayaran }}</td>
                         <td>{{ $pembayaran->jumlahPembayaran }}</td>
                         <td>{{ $pembayaran->tanggalPembayaran }}</td>
-                        <td>
+                        <td class="action-buttons">
                             <a href="{{ route('pembayarans.show', $pembayaran->id) }}" class="btn btn-info">Detail</a>
                             <a href="{{ route('pembayarans.edit', $pembayaran->id) }}" class="btn btn-warning">Edit</a>
                             <form action="{{ route('pembayarans.destroy', $pembayaran->id) }}" method="POST" style="display:inline-block;">

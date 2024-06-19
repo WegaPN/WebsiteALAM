@@ -5,6 +5,7 @@
     <h1>Daftar Jadwal Pendakian</h1>
     <div class="container-80">
         <a href="{{ route('jadwals.create') }}" class="btn btn-primary mb-3">Tambah Jadwal</a>
+        <br>
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 {{ $message }}
@@ -29,7 +30,7 @@
                         <td>{{ $jadwal->lokasi }}</td>
                         <td>{{ $jadwal->harga }}</td>
                         <td>{{ $jadwal->kuota }}</td>
-                        <td>
+                        <td class="action-buttons">
                             <a href="{{ route('jadwals.show', $jadwal->id) }}" class="btn btn-info">Detail</a>
                             <a href="{{ route('jadwals.edit', $jadwal->id) }}" class="btn btn-warning">Edit</a>
                             <form action="{{ route('jadwals.destroy', $jadwal->id) }}" method="POST" style="display:inline-block;">
