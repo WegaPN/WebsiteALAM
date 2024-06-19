@@ -443,7 +443,7 @@ header nav ul li a:hover {
 
 /*Fasilitas*/
 .bg-fasilitas {
-    background: url('/img/hero.png') no-repeat center center/cover;
+    background: url('/public/img/hero.png') no-repeat center center/cover;
     padding: 100px 20px;
     display: flex;
     flex-direction: column;
@@ -485,6 +485,7 @@ header nav ul li a:hover {
 }
 .pos{
     width: 50%;
+    background-image: url('/public/img/pos.jpeg');
 }
 figcaption{
     font-size: 14px;
@@ -492,7 +493,7 @@ figcaption{
 
 /*ketentuan*/
 .bg-ketentuan {
-    background: url('/img/hero.png') no-repeat center center/cover;
+    background: url('/public/img/hero.png') no-repeat center center/cover;
     padding: 100px 20px;
     display: flex;
     flex-direction: column;
@@ -548,7 +549,7 @@ figcaption{
 
 /* Larangan */
 .bg-larangan {
-    background: url('/img/hero.png') no-repeat center center/cover;
+    background: url('/public/img/hero.png') no-repeat center center/cover;
     padding: 100px 20px;
     display: flex;
     flex-direction: column;

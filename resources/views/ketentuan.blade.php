@@ -2,10 +2,10 @@
 
 @section('content')
 <section>
-    <div class="bg">
+    <div class="bg-ketentuan">
         <h1> KETENTUAN DAN KEWAJIBAN </h1>
         <h4>PENDAFTAR WAJIB MEMBACA DAN MEMAHAMI SEMUA PERATURAN PENDAKIAN !!!</h4>
-        <div class="container">
+        <div class="container-ketentuan">
         <div class="teks">Ketentuan</div>
         <div><p>Setiap calon pendaki harus memiliki SIMAKSI pendakian yang dikeluarkan oleh Perhutani Gunung Putri dengan ketentuan:</p></div>
         <div><p>1. Melakukan pendaftaran di basecamp Perhutani Gunung Putri atau website resmi untuk mendapatkan izin pendakian resmi.</p></div>
@@ -53,4 +53,4 @@
     </div>
     </div>
     </section>
-    @endsection
+ @endsection
