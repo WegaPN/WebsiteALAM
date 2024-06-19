@@ -22,8 +22,10 @@
             <div class="logo">Gunung Putri Lembang</div>
             <nav>
                 <ul>
-                    <li><a href="#info">Info Keselamatan</a></li>
-                    <li><a href="#jadwal">Jadwal</a></li>
+                    <li><a href="pembayarans">Pembayaran</a></li>
+                    <li><a href="daftarhitams">Daftar Hitam</a></li>
+                    <li><a href="kecelakaans">Info Keselamatan</a></li>
+                    <li><a href="jadwals">Jadwal</a></li>
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">

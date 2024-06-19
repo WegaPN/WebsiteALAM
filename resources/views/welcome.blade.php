@@ -12,9 +12,10 @@
         <div class="logo">Gunung Putri Lembang</div>
         <nav>
             <ul>
-                <li><a href="daftarhitam">Daftar Hitam</a></li>
-                <li><a href="info">Info Keselamatan</a></li>
-                <li><a href="jadwal">Jadwal</a></li>
+                <li><a href="pembayarans">Pembayaran</a></li>
+                <li><a href="daftarhitams">Daftar Hitam</a></li>
+                <li><a href="kecelakaans">Info Keselamatan</a></li>
+                <li><a href="jadwals">Jadwal</a></li>
                 <li><a href="login">Login/Register</a></li>
             </ul>
         </nav>
@@ -22,7 +23,7 @@
     <section class="hero">
         <div class="header-hero">
         <h1>Selamat datang di Website Pendakian Gunung Putri Lembang</h1>
-        <button class="cta-button" onclick="window.location.href='jadwal'">Pesan Tiket</button>
+        <button class="cta-button" onclick="window.location.href='orders'">Pesan Tiket</button>
     </div>
     </section>
     <section class="jalur-pendakian">
