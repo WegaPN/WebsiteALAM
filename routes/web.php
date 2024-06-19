@@ -22,7 +22,17 @@ use App\Http\Controllers\KecelakaanController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/ketentuan', function () {
+    return view('ketentuan');
+});
 
+Route::get('/fasilitas', function () {
+    return view('fasilitas'); 
+});
+
+Route::get('/larangan', function () {
+    return view('larangan'); 
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

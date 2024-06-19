@@ -17,7 +17,7 @@
         </div>
 
         <div class="input-container">
-            <a href="{{ url('/home') }}" class="btn btn-primary">
+            <a href="{{ ('/') }}" class="btn btn-primary">
                 {{ __('Go to Home') }}
             </a>
         </div>

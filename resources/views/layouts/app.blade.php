@@ -19,11 +19,11 @@
 <body>
     <div id="app">
         <header>
-            <div class="logo">Gunung Putri Lembang</div>
+            <a href="/" class="logo"> <div class="logo">Gunung Putri Lembang</div> </a>
             <nav>
                 <ul>
                     <li><a href="pembayarans">Pembayaran</a></li>
-                    <li><a href="daftarhitams">Daftar Hitam</a></li>
+                    <li><a href="daftarHitams">Daftar Hitam</a></li>
                     <li><a href="kecelakaans">Info Keselamatan</a></li>
                     <li><a href="jadwals">Jadwal</a></li>
                     @guest
