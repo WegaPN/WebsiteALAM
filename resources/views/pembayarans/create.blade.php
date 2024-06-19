@@ -15,12 +15,20 @@
     <form action="{{ route('pembayarans.store') }}" method="POST">
         @csrf
         <div class="input-container">
-            <label for="user_id" class="form-label">User ID</label>
-            <input type="text" class="form-control" id="user_id" name="user_id" value="{{ old('user_id') }}">
+            <label for="user_id" class="form-label">User</label>
+            <select class="form-control" id="user_id" name="user_id">
+                @foreach ($users as $user)
+                    <option value="{{ $user->id }}">{{ $user->name }}</option>
+                @endforeach
+            </select>
         </div>
         <div class="input-container">
-            <label for="order_id" class="form-label">Order ID</label>
-            <input type="text" class="form-control" id="order_id" name="order_id" value="{{ old('order_id') }}">
+            <label for="order_id" class="form-label">Order</label>
+            <select class="form-control" id="order_id" name="order_id">
+                @foreach ($orders as $order)
+                    <option value="{{ $order->id }}">{{ $order->order_number }}</option>
+                @endforeach
+            </select>
         </div>
         <div class="input-container">
             <label for="keterangan" class="form-label">Keterangan</label>

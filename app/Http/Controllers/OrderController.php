@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Order;
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Permission;
+use App\Models\User; // Import model User
+use App\Models\Jadwal; // Jika ada, import model Jadwal jika digunakan
 
 class OrderController extends Controller
 {
@@ -27,7 +28,10 @@ class OrderController extends Controller
     // Show the form for creating a new resource.
     public function create()
     {
-        return view('orders.create');
+        $users = User::all(); // Mendapatkan semua user dari database
+        $jadwals = Jadwal::all(); // Jika ada, mendapatkan semua jadwal dari database
+
+        return view('orders.create', compact('users', 'jadwals'));
     }
 
     // Store a newly created resource in storage.
@@ -55,7 +59,10 @@ class OrderController extends Controller
     // Show the form for editing the specified resource.
     public function edit(Order $order)
     {
-        return view('orders.edit', compact('order'));
+        $users = User::all(); // Mendapatkan semua user dari database
+        $jadwals = Jadwal::all(); // Jika ada, mendapatkan semua jadwal dari database
+
+        return view('orders.edit', compact('order', 'users', 'jadwals'));
     }
 
     // Update the specified resource in storage.

@@ -4,17 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Pembayaran;
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Permission;
+use App\Models\User; // Import model User
+use App\Models\Order; // Import model Order
 
 class PembayaranController extends Controller
 {
     public function __construct()
     {
         // Middleware to handle permissions for various actions
-        $this->middleware('permission:pembayaran-list|pembayaran-create|pembayaran-edit|pembayaran-delete', ['only' => ['index']]);
-        $this->middleware('permission:pembayaran-create', ['only' => ['create', 'store']]);
-        $this->middleware('permission:pembayaran-edit', ['only' => ['edit', 'update']]);
-        $this->middleware('permission:pembayaran-delete', ['only' => ['destroy']]);
+        $this->middleware('permission:pembayaran-list|pembayaran-create|pembayaran-edit|pembayaran-delete')->only('index');
+        $this->middleware('permission:pembayaran-create')->only(['create', 'store']);
+        $this->middleware('permission:pembayaran-edit')->only(['edit', 'update']);
+        $this->middleware('permission:pembayaran-delete')->only('destroy');
     }
 
     // Display a listing of the resource.
@@ -27,7 +28,10 @@ class PembayaranController extends Controller
     // Show the form for creating a new resource.
     public function create()
     {
-        return view('pembayarans.create');
+        $users = User::all(); // Mendapatkan semua user
+        $orders = Order::all(); // Mendapatkan semua order
+
+        return view('pembayarans.create', compact('users', 'orders'));
     }
 
     // Store a newly created resource in storage.
@@ -53,7 +57,10 @@ class PembayaranController extends Controller
     // Show the form for editing the specified resource.
     public function edit(Pembayaran $pembayaran)
     {
-        return view('pembayarans.edit', compact('pembayaran'));
+        $users = User::all(); // Mendapatkan semua user
+        $orders = Order::all(); // Mendapatkan semua order
+
+        return view('pembayarans.edit', compact('pembayaran', 'users', 'orders'));
     }
 
     // Update the specified resource in storage.

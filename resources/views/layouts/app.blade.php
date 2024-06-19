@@ -22,10 +22,10 @@
             <a href="/" class="logo"> <div class="logo">Gunung Putri Lembang</div> </a>
             <nav>
                 <ul>
-                    <li><a href="pembayarans">Pembayaran</a></li>
-                    <li><a href="daftarHitams">Daftar Hitam</a></li>
-                    <li><a href="kecelakaans">Info Keselamatan</a></li>
-                    <li><a href="jadwals">Jadwal</a></li>
+                    <li><a href="{{route('pembayarans.index')}}">Pembayaran</a></li>
+                    <li><a href="{{route('daftarHitams.index')}}">Daftar Hitam</a></li>
+                    <li><a href="{{route('kecelakaans.index')}}">Info Keselamatan</a></li>
+                    <li><a href="{{route('jadwals.index')}}">Jadwal</a></li>
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
