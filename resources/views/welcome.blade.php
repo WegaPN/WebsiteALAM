@@ -33,13 +33,13 @@
     </section>
     <section class="info-cards">
     <a href="ketentuan" class="card card-1">
-        <h3>Ketentuan & Persyaratan</h3>
+        <h3>Ketentuan & Kewajiban</h3>
     </a>
     <a href="fasilitas" class="card card-2">
         <h3>Fasilitas</h3>
     </a>
-    <a href="persiapan" class="card card-3">
-        <h3>Persiapan</h3>
+    <a href="larangan" class="card card-3">
+        <h3>Larangan</h3>
     </a>
     </section>
     <div class ="help">

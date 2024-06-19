@@ -513,7 +513,7 @@ header nav ul li a:hover {
     color: black; 
     text-align: center;
 }
-.bg h4{
+.bg-ketentuan h4{
     text-align: center;
 }
 .container-ketentuan{
@@ -555,6 +555,45 @@ header nav ul li a:hover {
     place-items: center; 
 }
 
+/* Larangan */
+.bg-larangan {
+    background: url('/img/hero.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-larangan h1 {
+    font-size: 70px; 
+    color: black; 
+    text-align: center;
+    margin: 0;
+}
+.bg-larangan h4{
+    text-align: center;
+}
+.container-larangan{
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+.container-larangan p {
+    margin: 0px;
+}
+.tekss {
+    font-size: 36px; 
+    color: #000000; 
+    font-weight: bold; 
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+}
 /* Mobile */
 @media (max-width: 767px) {
     header {
